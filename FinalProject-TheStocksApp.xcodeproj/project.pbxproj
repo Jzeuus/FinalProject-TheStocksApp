@@ -16,6 +16,12 @@
 		C3B2EADE283CC1A900092325 /* FinalProject_TheStocksAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B2EADD283CC1A900092325 /* FinalProject_TheStocksAppTests.swift */; };
 		C3B2EAE8283CC1A900092325 /* FinalProject_TheStocksAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B2EAE7283CC1A900092325 /* FinalProject_TheStocksAppUITests.swift */; };
 		C3B2EAEA283CC1A900092325 /* FinalProject_TheStocksAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B2EAE9283CC1A900092325 /* FinalProject_TheStocksAppUITestsLaunchTests.swift */; };
+		C3B2EAF9283CC45F00092325 /* StockModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B2EAF8283CC45F00092325 /* StockModel.swift */; };
+		C3B2EAFB283CC5DF00092325 /* StockTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B2EAFA283CC5DF00092325 /* StockTableViewController.swift */; };
+		C3B2EAFD283CC60200092325 /* StockTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B2EAFC283CC60200092325 /* StockTableViewCell.swift */; };
+		C3B2EAFF283CC62B00092325 /* StockDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B2EAFE283CC62B00092325 /* StockDetailViewController.swift */; };
+		C3B2EB01283CC90200092325 /* StockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B2EB00283CC90200092325 /* StockData.swift */; };
+		C3B2EB03283CCA7300092325 /* StockJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B2EB02283CCA7300092325 /* StockJSON.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,12 @@
 		C3B2EAE3283CC1A900092325 /* FinalProject-TheStocksAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FinalProject-TheStocksAppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3B2EAE7283CC1A900092325 /* FinalProject_TheStocksAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalProject_TheStocksAppUITests.swift; sourceTree = "<group>"; };
 		C3B2EAE9283CC1A900092325 /* FinalProject_TheStocksAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalProject_TheStocksAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C3B2EAF8283CC45F00092325 /* StockModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockModel.swift; sourceTree = "<group>"; };
+		C3B2EAFA283CC5DF00092325 /* StockTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockTableViewController.swift; sourceTree = "<group>"; };
+		C3B2EAFC283CC60200092325 /* StockTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockTableViewCell.swift; sourceTree = "<group>"; };
+		C3B2EAFE283CC62B00092325 /* StockDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockDetailViewController.swift; sourceTree = "<group>"; };
+		C3B2EB00283CC90200092325 /* StockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockData.swift; sourceTree = "<group>"; };
+		C3B2EB02283CCA7300092325 /* StockJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockJSON.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +111,8 @@
 		C3B2EAC5283CC1A700092325 /* FinalProject-TheStocksApp */ = {
 			isa = PBXGroup;
 			children = (
+				C3B2EAF7283CC3E200092325 /* ViewControllers */,
+				C3B2EAF6283CC35900092325 /* Models */,
 				C3B2EAC6283CC1A700092325 /* AppDelegate.swift */,
 				C3B2EAC8283CC1A700092325 /* SceneDelegate.swift */,
 				C3B2EACA283CC1A700092325 /* ViewController.swift */,
@@ -125,6 +139,26 @@
 				C3B2EAE9283CC1A900092325 /* FinalProject_TheStocksAppUITestsLaunchTests.swift */,
 			);
 			path = "FinalProject-TheStocksAppUITests";
+			sourceTree = "<group>";
+		};
+		C3B2EAF6283CC35900092325 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C3B2EAF8283CC45F00092325 /* StockModel.swift */,
+				C3B2EB00283CC90200092325 /* StockData.swift */,
+				C3B2EB02283CCA7300092325 /* StockJSON.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C3B2EAF7283CC3E200092325 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C3B2EAFA283CC5DF00092325 /* StockTableViewController.swift */,
+				C3B2EAFE283CC62B00092325 /* StockDetailViewController.swift */,
+				C3B2EAFC283CC60200092325 /* StockTableViewCell.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,8 +292,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3B2EB01283CC90200092325 /* StockData.swift in Sources */,
+				C3B2EAF9283CC45F00092325 /* StockModel.swift in Sources */,
 				C3B2EACB283CC1A700092325 /* ViewController.swift in Sources */,
+				C3B2EAFF283CC62B00092325 /* StockDetailViewController.swift in Sources */,
 				C3B2EAC7283CC1A700092325 /* AppDelegate.swift in Sources */,
+				C3B2EB03283CCA7300092325 /* StockJSON.swift in Sources */,
+				C3B2EAFB283CC5DF00092325 /* StockTableViewController.swift in Sources */,
+				C3B2EAFD283CC60200092325 /* StockTableViewCell.swift in Sources */,
 				C3B2EAC9283CC1A700092325 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -437,13 +477,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = S5YMVXK6Z2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "FinalProject-TheStocksApp/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = Main;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -465,13 +506,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = S5YMVXK6Z2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "FinalProject-TheStocksApp/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = Main;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
